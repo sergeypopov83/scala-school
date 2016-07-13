@@ -70,14 +70,21 @@ Partial functions
    Задания
 Коротко о тестировании в скала.
     ScalaTest
+        FunSuit
         FlatSpec
-        FunSpec
+        WordSpec
+        Mocks
     ScalaCheck
-    Mockito
     Задания
-Наследование
+Исключительные ситуации
+    Checked / Unckecked / Fatal / NonFatal
+    try{}catch{}
+    Try{}
+ООП
    extends и with
-   Полиморфизм, инкапсуляция, наследование
+   Полиморфизм, инкапсуляция, наследование, абстракция.
+   SOLID
+   Наследлвание в скала
    Множественное наследование. Diamond problem.
    Как решено в скале. Линеизация
    Задания
@@ -88,10 +95,6 @@ Type parameters. Общая информация.
    	Структурные типы
     Полиморфизм в скале (Ad-hoc, duck typing, стратегия, декоратор, cake pattern)
    	Наследование от функций.
-Исключительные ситуации
-    Checked / Unckecked / Fatal / NonFatal
-    try{}catch{}
-    Try{}
 Имплиситы.
     Implicit evidence
    	Implicit conversions
@@ -99,6 +102,12 @@ Type parameters. Общая информация.
 Инерполяторы
      String interpolation
 Потоки (Streams)
+
+Связь с JAVA.
+ Конвертация коллекций
+ Способы исследования сгенерированного кода
+    JAD
+    javap
 
 SBT в деталях
 
@@ -116,17 +125,13 @@ SBT в деталях
    	методы Ask, tell, receive
    	SupevisionStrategy.
    	Метод become.
-Связь с JAVA.
- Способы исследования сгенерированного кода
-    JAD
-    javap
 
 Ограничения и подводные камни
 	инициализация Lazy val
 	def vs val и ETA convertion	
 
-Type paramters vs Virtual types.
-	В чем разница между виртуальными типами и дженериками. 
+Type parameters vs Virtual types.
+	В чем разница между виртуальными типами и тайп параметрами.
     Existential types
 	Конструктор типов
 	f-bound polymorphizm

@@ -67,7 +67,7 @@ object SortingStuff extends App {
                       boots: List[Boots] = Nil,
                       junk: List[Stuff] = Nil)
 
-  //  def sortJunk(stuff: List[Stuff]) = sort(stuff, StuffBox())
+   def sortJunk(stuff: List[Stuff]): StuffBox = ??? ///sort(stuff, StuffBox())
   // // Замените знаки вопроса подходящим кодом
   // // Поправьте логику метода
   //  private def sort(stuff: List[Stuff], stuffBox: StuffBox): StuffBox = ??? {
@@ -77,7 +77,7 @@ object SortingStuff extends App {
   //      sort(rest, newBox)
   //
   //  }
-  //  // Метод должен положть вещь в правильную коробку
+  //  // Метод должен положить вещь в правильную коробку
   //  private def putStuffInRightBox(item: Stuff, stuffBox: StuffBox) = ??? {
   //    case ??? => stuffBox.copy(watches = it :: stuffBox.watches)
   //    case junk@_ => stuffBox.copy(junk = junk :: stuffBox.junk)

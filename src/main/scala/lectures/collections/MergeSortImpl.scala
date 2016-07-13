@@ -6,8 +6,8 @@ package lectures.collections
   *
   *
   */
-class MergeSortImpl extends App {
+object MergeSortImpl extends App {
 
-  def mergeSort(data: List[Int]): List[Int] = ???
+  def mergeSort(data: Seq[Int]): Seq[Int] = data
 
 }
