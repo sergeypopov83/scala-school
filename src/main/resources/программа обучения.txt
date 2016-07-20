@@ -49,9 +49,9 @@ Partial functions
    Задания
 Обзор коллекций
  Коллекции в скала
-    Traversble.
-       Основные методы (map, flatMap, collect, foldLeft, transform ...)
-       Примеры коллекций
+    Трейты, составляющие основу коллекций в scala
+    Основные методы (map, flatMap, collect, foldLeft, transform ...)
+    Примеры коллекций
     Option
     Задания
     For comprehension
@@ -81,35 +81,48 @@ Partial functions
     try{}catch{}
     Try{}
 ООП
-   extends и with
-   Полиморфизм, инкапсуляция, наследование, абстракция.
-   SOLID
-   Наследлвание в скала
-   Множественное наследование. Diamond problem.
-   Как решено в скале. Линеизация
-   Задания
+    extends и with
+    Полиморфизм, инкапсуляция, наследование, абстракция.
+    SOLID
+    Наследлвание в скала
+        Линейное наследоване, ключевое слово extends, ключевое слово override
+        Super, final, sealed
+        Mix in наследование - трейты
+        Diamond problem.
+        Линеизация
+        Анонимные классы
+        Self type annotation
+    Задания
 Type parameters. Общая информация.
-    type alias
+    Виртуальные типы
     abstract override
     Ковариантность. Контрвариантность
    	Структурные типы
-    Полиморфизм в скале (Ad-hoc, duck typing, стратегия, декоратор, cake pattern)
+    Полиморфизм в скале (Ad-hoc, duck typing, стратегия, декоратор, cake pattern, f-bound)
    	Наследование от функций.
+   	Экзистенциальные типы
+   	В чем разница между виртуальными типами и тайп параметрами.
+    Конструктор типов
+    type lambdas
+   	Задания
 Имплиситы.
     Implicit evidence
    	Implicit conversions
+    Type classes
     Pimp my library. Примеры из predef.
-Инерполяторы
-     String interpolation
+    Задания
+
+Инерполяторы.String interpolation
 Потоки (Streams)
+Path dependent types
+
+SBT в деталях
 
 Связь с JAVA.
  Конвертация коллекций
  Способы исследования сгенерированного кода
     JAD
     javap
-
-SBT в деталях
 
 Асинхронность в SCALA
  Futures
@@ -127,15 +140,8 @@ SBT в деталях
    	Метод become.
 
 Ограничения и подводные камни
-	инициализация Lazy val
+	инициализация lazy val
 	def vs val и ETA convertion	
-
-Type parameters vs Virtual types.
-	В чем разница между виртуальными типами и тайп параметрами.
-    Existential types
-	Конструктор типов
-	f-bound polymorphizm
-	type lambdas	
 
 Мат. часть
 	Понятяие категории. Морфизмы. Функторы.
@@ -146,9 +152,9 @@ Type parameters vs Virtual types.
 	Free monada.
 	Trampoline
 	Reader monada.
-	список для самостоятелььного изучения.
+    список для самостоятелььного изучения.
 
-Часть 3. Scala in enterprise 	
+Scala in enterprise
  Работа с БД
     наш фремворк
     slick

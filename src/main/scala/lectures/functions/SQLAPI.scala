@@ -20,7 +20,7 @@ package lectures.functions
   *
   *
   */
-object SQLAPI extends App {
+class SQLAPI(resource :String) {
 
   case class Connection(resource: String, opened: Boolean = false) {
 
@@ -28,7 +28,7 @@ object SQLAPI extends App {
 
     def open(): Connection = this.copy(opened = true)
 
-    def execute(sql: String): String = if(opened) result else throw new Exception("You have to open connection before execute")
+    def execute(sql: String): String = if(opened) sql else throw new Exception("You have to open connection before execute")
 
   }
 
@@ -36,7 +36,7 @@ object SQLAPI extends App {
 
   val connection = (resource: String) => Connection(resource)
 
-  def execute(resource: String, sql: String): String = ???
+  def execute(sql: String): String = ??? // use resource from constructor
 
 
   def openConnection(connection: Connection): (String) => String =
@@ -44,5 +44,10 @@ object SQLAPI extends App {
       connection.open execute sql
   }
 
-  execute("some DB", "some SQL")
+}
+
+object SQLCheck extends App {
+
+  new SQLAPI("some DB").execute("some SQL")
+
 }
