@@ -31,6 +31,15 @@ object DefaultPuzzle {
   }
 }
 
+object OR {
+  def unapply(puzzle: ToyPuzzle): Option[(Figure, Figure)] = {
+    val ToyPuzzle(f1, f2, f3) = puzzle
+    if (f1.isInstanceOf[Cube] && f2.isInstanceOf[Pyramid])
+      Some(f1, f2)
+    else None
+  }
+}
+
 object Main extends App {
 
   val p1 = ToyPuzzle(Sphere(), Sphere(), Sphere())
@@ -40,6 +49,7 @@ object Main extends App {
 
   def matchPuzzle(puzzle: ToyPuzzle) = puzzle match {
     case ToyPuzzle(f1, f2, f3) if (f1 == f2) && (f1 == f3) =>
+    case cube OR pyramid => print(cube)
     case DefaultPuzzle(cube1, pyramid1, sphere1) => print(cube1)
     case ToyPuzzle(Pyramid(_), _, _) => print("Puzzle with pyramid in front ")
     //case puzzle =>  //DOn't forget to put all possible cases
