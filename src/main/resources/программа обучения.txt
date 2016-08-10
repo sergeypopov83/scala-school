@@ -80,6 +80,7 @@ Partial functions
     Checked / Unckecked / Fatal / NonFatal
     try{}catch{}
     Try{}
+    Задания
 ООП
     extends и with
     Полиморфизм, инкапсуляция, наследование, абстракция.
@@ -101,18 +102,34 @@ Type parameters. Общая информация.
    	Структурные типы
     Абстрактные типы
    	В чем разница между абстрактные типами и тайп параметрами.
-    type lambdas
+    type erasure
    	Задания
 Имплиситы.
-    Implicit evidence
-   	Implicit conversions
+   	Механизм обнаружения и работы имплиситов
+   	Implicit conversions. Pimp my library. Примеры из predef.
+   	Implicit parameters
+   	Implicit contexts
     Type classes
-    Pimp my library. Примеры из predef.
     Задания
-
-Инерполяторы.String interpolation
 Потоки (Streams)
+Структурные типы
 Path dependent types
+Асинхронность в SCALA
+ Futures
+    Как выполняеться Future. ExecutionContext. ForkJoinPool
+    Статические методы
+    Callback функции
+    Комбинаторы над Future
+   	Promise, зачем он нужен. Пример
+   	Правила работы с Future
+   	Задание
+ Akka actors
+    Что такое актор.
+   	Actor System. Конфигурция и применение
+   	Простой актор
+   	методы Ask, tell, receive
+   	SupervisionStrategy.
+   	Метод become.
 
 SBT в деталях
     Структура проекта SBT
@@ -132,25 +149,6 @@ SBT в деталях
     JAD
     javap
 
-Асинхронность в SCALA
- Futures
-    Как выполняеться Future. ExecutionContext
-    Комбинаторы над Future
-    Fork join Pool
-   	Promise, зачем он нужен. Примеры применения
-   	Связь Future и Try.
- Akka actors
-    Что такое актор.
-   	Actor System. Конфигурция и применение
-   	Простой актор
-   	методы Ask, tell, receive
-   	SupevisionStrategy.
-   	Метод become.
-
-Ограничения и подводные камни
-	инициализация lazy val
-	def vs val и ETA convertion	
-
 Мат. часть
 	Понятяие категории. Морфизмы. Функторы.
 	Монада и моноид
@@ -160,13 +158,8 @@ SBT в деталях
 	Free monada.
 	Trampoline
 	Reader monada.
-    список для самостоятелььного изучения.
+    список для самостоятельного изучения.
 
-Scala in enterprise
- Работа с БД
-    наш фремворк
-    slick
- Веб сервисы. ScalaXb
- Взаимодействие по http
-    httpClient. Наше расширение для dispatch.
-    Spray в общих чертах
+Ограничения и подводные камни
+	инициализация lazy val
+	def vs val и ETA conversion

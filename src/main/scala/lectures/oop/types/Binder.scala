@@ -1,9 +1,5 @@
 package lectures.oop.types
 
-class Binder {
-
-}
-import scala.reflect._
 import scala.reflect.runtime.{universe => ru}
 import ru._
 
@@ -43,7 +39,7 @@ object Binder4 {
     def build[T](item: T): M[T]
   }
 
-  implicit val seqBuilder = new Builder[Seq] {
+  implicit var seqBuilder = new Builder[Seq] {
     override def build[T](item: T): Seq[T] = Seq(item)
   }
   implicit val setBuilder = new Builder[Set] {
@@ -57,7 +53,7 @@ object Binder4 {
   def fill[T, B[_]](count: Int, item: T)(implicit builder: Builder[B]) = ???
 }
 
-object BinderExample extends App{
+object BinderExample extends App {
   import Binder4._
 
   def withType[T:TypeTag, ClassTag](t: T): Unit = {
