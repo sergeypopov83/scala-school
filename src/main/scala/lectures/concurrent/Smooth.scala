@@ -20,5 +20,5 @@ object Smooth{
 }
 
 class Smooth {
-   def apply(): Future = ???
+   def apply(): Future[_] = ???
 }
