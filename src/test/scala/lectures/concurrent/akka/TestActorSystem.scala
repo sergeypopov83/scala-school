@@ -4,10 +4,6 @@ import akka.actor.{Actor, ActorSystem, Terminated}
 import akka.testkit.{TestKit, TestKitBase}
 import org.scalatest.{BeforeAndAfterAll, Suite}
 
-/**
-  * Created by s.popov2 on 16.08.2016.
-  */
-
 object TerminationWatcher {
 }
 

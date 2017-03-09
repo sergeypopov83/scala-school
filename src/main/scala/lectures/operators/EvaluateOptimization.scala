@@ -3,43 +3,56 @@ package lectures.operators
 import lectures.functions.Data
 
 /**
-  * В задачке из lectures.functions.Computations, мы реализовали
-  * один и тот же метод 3-я разными способами
+  * В задачке из lectures.functions.Computations мы реализовали
+  * один и тот же метод 3-мя разными способами
   *
-  * Пришло время оценить на сколько разные имплементации
+  * Пришло время оценить, насколько разные имплементации
   * отличаются друг от друга по производительности
   *
-  * Для этого, раскомментируйте код, выполните в циклах вызов 3-х имплементаций
-  * Оцените разницу во времени выполнения и объясните ее происхожение
+  * Для этого раскомментируйте код, выполните в циклах вызов 3-х имплементаций,
+  * оцените разницу во времени выполнения и объясните ее происхожение
   *
   */
 object EvaluateOptimization extends App with Data {
 
-  val startTimestamp = System.currentTimeMillis()
+  val computationStartTimestamp = System.currentTimeMillis()
+
+  // ВЫПОЛНИТЬ В ЦИКЛЕ ОТ 1 ДО 100 Computation.computation
+  for (??? <- ???) {
+    ???
+  }
+
+  println("Elapsed time in computation(): " + (System.currentTimeMillis() - computationStartTimestamp))
 
 
-  // ВЫПОЛНИТЬ В ЦИКЛЕ  ОТ 1 ДО 100 Computation.computation(
-  //    for(??? <- ???) {
-  //    print("elapsed time in Computation.computation" + (System.currentTimeMillis() - startTimestamp))
-  //   }
 
-  // ВЫПОЛНИТЬ В ЦИКЛЕ  ОТ 1 ДО 100 CurriedComputation.partiallyAppliedCurriedFunction(
-  //    for(??? <- ???) {
-  //     ???
-  //    print("elapsed time " + (System.currentTimeMillis() - startTimestamp))
-  //   }
+  val partiallyAppliedStartTimestamp = System.currentTimeMillis()
 
-  // ВЫПОЛНИТЬ В ЦИКЛЕ  ОТ 1 ДО 100 FunctionalComputation.filterApplied
-  //    for(??? <- ???) {
-  //     ???
-  //    print("elapsed time " + (System.currentTimeMillis() - startTimestamp))
-  //   }
+  // ВЫПОЛНИТЬ В ЦИКЛЕ ОТ 1 ДО 100 CurriedComputation.partiallyAppliedCurriedFunction
+  for (??? <- ???) {
+    ???
+  }
+
+  val partiallyAppliedDuration = System.currentTimeMillis() - partiallyAppliedStartTimestamp
+  println("Elapsed time in partiallyAppliedCurriedFunction(): " + partiallyAppliedDuration)
+
+
+
+  val filterAppliedStartTimestamp = System.currentTimeMillis()
+
+  // ВЫПОЛНИТЬ В ЦИКЛЕ ОТ 1 ДО 100 FunctionalComputation.filterApplied
+  for (??? <- ???) {
+    ???
+  }
+
+  val filterAppliedDuration = System.currentTimeMillis() - filterAppliedStartTimestamp
+  println("Elapsed time in filterApplied():" + filterAppliedDuration)
 
   // ВЫВЕСТИ РАЗНИЦУ В ПРОДОЛЖИТЕЛЬНОСТИ ВЫПОЛНЕНИЯ МЕЖДУ КАРРИРОВАННОЙ ВЕРСИЕЙ
   // И ФУНКЦИОНАЛЬНОЙ
 
-  //  val diff = ???
+  val diff = ???
 
-  ///  print(s"Difference is about $diff milliseconds")
+  println(s"Difference is about $diff milliseconds")
 }
 

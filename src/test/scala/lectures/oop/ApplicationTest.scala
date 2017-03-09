@@ -3,7 +3,7 @@ package lectures.oop
 import org.scalatest.WordSpec
 
 /**
-  * Раскомментруйте и допишите тесты на
+  * Раскомментируйте и допишите тесты на
   * класс lectures.oop.Application
   */
 class ApplicationTest extends WordSpec {

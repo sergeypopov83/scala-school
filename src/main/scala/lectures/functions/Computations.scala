@@ -51,6 +51,8 @@ object CurriedComputation extends App with Data {
 
 /**
   * Допишите реализации методов так, что бы результат совпадал с предыдущими.
+  *
+  * При этом постарайтесь минимизировать количество разбиений строки filterData на отдельные слова.
   */
 object FunctionalComputation extends App with Data {
 
@@ -61,6 +63,3 @@ object FunctionalComputation extends App with Data {
   val result = filterApplied(???)
   result.foreach(println)
 }
-
-
-

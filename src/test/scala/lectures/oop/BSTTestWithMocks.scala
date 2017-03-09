@@ -6,7 +6,7 @@ import org.scalatest.mock.MockitoSugar
 import org.scalatest.{Matchers, GivenWhenThen, BeforeAndAfterAll, WordSpec}
 import org.mockito.Matchers.{eq => exact, _}
 /**
-  * This test test nothing and intended only to show the power of Mockito mocks
+  * This test tests nothing and is intended only to show the power of Mockito mocks
   *
   *
   */

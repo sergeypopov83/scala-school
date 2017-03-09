@@ -4,10 +4,10 @@ import scala.util.Random
 
 /**
   * Эта задача имитирует авторизацию в интернет банке.
-  * Авторизоваться можно 2-я способами. Предоставив карту или логин\пароль
-  * Вам дан список зарегистрированных банковских  карт и
+  * Авторизоваться можно 2-я способами. Предоставив карту или логин/пароль
+  * Вам дан список зарегистрированных банковских карт и
   * AuthenticationData.registeredCards
-  * и список зарегистрированных логинов\паролей
+  * и список зарегистрированных логинов/паролей
   * AuthenticationData.registeredLoginAndPassword
   *
   * Ваша задача, получая на вход приложения список тестовых юзеров
@@ -20,11 +20,11 @@ import scala.util.Random
   * CardUser - пользователь, который предоствил данные карты
   * LPUser - пользователь, предоставивший логин и пароль
   *
-  * Для решения задачи, раскомметируйте код в теле объекта Authentication
-  * Реаллизуйте методы  authByCard и authByLP, заменив
+  * Для решения задачи раскомметируйте код в теле объекта Authentication
+  * Реализуйте методы authByCard и authByLP, заменив
   * знаки ??? на подходящие выражения.
   *
-  * Что-либо еще, кроме знаков ??? заменять нельзя
+  * Что-либо еще, кроме знаков ???, заменять нельзя
   */
 object Authentication extends App {
 
@@ -32,7 +32,7 @@ object Authentication extends App {
 
 // val authByCard: PartialFunction[???, ???] = ???
 
- //val authByLP: PartialFunction[???, ???] = ???
+// val authByLP: PartialFunction[???, ???] = ???
 
   val authenticated: List[Option[User]] = for (user <- testUsers) yield {
     ???
