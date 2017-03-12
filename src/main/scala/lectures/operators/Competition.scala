@@ -35,8 +35,8 @@ object Competition extends App {
   //  }
 
   //  var finalResult = 0
-  //  for(r <- results) {
-  //    if(???)finalResult = finalResult + 1
+  //  for (r <- results) {
+  //    if (???) finalResult = finalResult + 1
   //    else ???
   //  }
 

@@ -34,7 +34,7 @@ trait ProductionServiceImpl extends UsefulService {
 
 class Application(isTestEnv: Boolean) {
 
-  val usefulService : UsefulService = if (isTestEnv)
+  val usefulService: UsefulService = if (isTestEnv)
    ??? //передайте "test db Resource" в качестве ресурсв в конструктор SQLAPI
   else
    ??? //передайте "production Resource" в качестве ресурсв в конструктор SQLAPI
