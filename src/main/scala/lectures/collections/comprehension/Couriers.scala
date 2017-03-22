@@ -16,7 +16,7 @@ package lectures.collections.comprehension
   *  Изучить код и переписать его так,
   *  что бы в нем не было ни одного цикла for, ни одной переменной или мутабильной коллекции
   *
-  * Для этого используйте функции комбинаторы: filter, filterWith, fold, map, flatMap и т.д.
+  * Для этого используйте функции комбинаторы: filter, withFilter, fold, map, flatMap и т.д.
   *
   */
 
