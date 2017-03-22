@@ -58,7 +58,7 @@ object CouriersWithComprehension extends App {
     var accum = 0
     for (courier <- couriers;
          trafficDegree = traffic().degree;
-         t <- 0 to courier.canServe if trafficDegree < 5 && accum < addresses.length
+         t <- 0 until courier.canServe if trafficDegree < 5 && accum < addresses.length
     ) yield {
       val addr = addresses(accum)
       accum = accum + 1
