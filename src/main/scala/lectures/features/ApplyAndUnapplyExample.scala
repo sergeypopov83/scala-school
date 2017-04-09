@@ -48,8 +48,8 @@ object Main extends App {
   val badPuzzle = ToyPuzzle(Cube(), Pyramid(), Pyramid())
 
   def matchPuzzle(puzzle: ToyPuzzle) = puzzle match {
-    case ToyPuzzle(f1, f2, f3) if (f1 == f2) && (f1 == f3) =>
-    case cube OR pyramid => print(cube)
+    case ToyPuzzle(f1, f2, f3) if (f1 == f2) && (f1 == f3) => println("Toy puzzle")
+    case OR(cube, pyramid) => print(cube)
     case DefaultPuzzle(cube1, pyramid1, sphere1) => print(cube1)
     case ToyPuzzle(Pyramid(_), _, _) => print("Puzzle with pyramid in front ")
     //case puzzle =>  //DOn't forget to put all possible cases

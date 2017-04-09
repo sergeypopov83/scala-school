@@ -13,10 +13,10 @@ class ApplicationTest extends WordSpec {
   "Application" should {
     "return correct answer" when started{
       "in a test environment" in {
-        //??? shouldBe 8
+        //??? shouldBe 5
       }
       "in a production environment" in {
-      //   ??? shouldBe 3
+      //   ??? shouldBe 2
       }
     }
   }
