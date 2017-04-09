@@ -25,7 +25,7 @@ package lectures.functions
   *
   *
   */
-class SQLAPI(resource :String) {
+class SQLAPI(resource: String) {
 
   case class Connection(resource: String, opened: Boolean = false) {
 
@@ -33,7 +33,7 @@ class SQLAPI(resource :String) {
 
     def open(): Connection = this.copy(opened = true)
 
-    def execute(sql: String): String = if(opened) result else throw new Exception("You have to open connection before execute")
+    def execute(sql: String): String = if (opened) result else throw new Exception("You have to open connection before execute")
 
   }
 

@@ -16,7 +16,7 @@ package lectures.collections.comprehension
   *  Изучить код и переписать его так,
   *  что бы в нем не было ни одного цикла for, ни одной переменной или мутабильной коллекции
   *
-  * Для этого используйте функции комбинаторы: filter, filterWith, fold, map, flatMap и т.д.
+  * Для этого используйте функции комбинаторы: filter, withFilter, fold, map, flatMap и т.д.
   *
   */
 
@@ -58,7 +58,7 @@ object CouriersWithComprehension extends App {
     var accum = 0
     for (courier <- couriers;
          trafficDegree = traffic().degree;
-         t <- 0 to courier.canServe if trafficDegree < 5 && accum < addresses.length
+         t <- 0 until courier.canServe if trafficDegree < 5 && accum < addresses.length
     ) yield {
       val addr = addresses(accum)
       accum = accum + 1
